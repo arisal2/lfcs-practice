@@ -1,0 +1,10 @@
+# macOS metadata
+.DS_Store
+
+# Downloaded and generated VM disk images
+/images/
+/instances/
+*.partial
+
+# Generated cloud-init seed image
+/seed/*.iso

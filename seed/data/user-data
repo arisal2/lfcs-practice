@@ -1,0 +1,16 @@
+#cloud-config
+users:
+  - name: ubuntu
+    groups: [adm, sudo]
+    shell: /bin/bash
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    lock_passwd: false
+
+chpasswd:
+  expire: false
+  users:
+    - name: ubuntu
+      password: lfcs
+      type: text
+
+ssh_pwauth: true
